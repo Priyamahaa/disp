@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function abc() 
+		{
+			var a=document.getElementById('x').value;
+
+			if (a=="10") 
+			{
+				document.getElementById('Tc').disabled=false;
+				document.getElementById('Marksheet').disabled=false;
+				document.getElementById('cc').disabled=true;
+				document.getElementById('pan').disabled=true;
+				document.getElementById('aadhar').disabled=true;
+				document.getElementById('address').disabled=true;
+				
+
+			}
+			else if (a=="12") 
+			{
+				document.getElementById('Tc').disabled=true;
+				document.getElementById('Marksheet').disabled=true;
+				document.getElementById('cc').disabled=false;
+				document.getElementById('pan').disabled=false;
+				document.getElementById('aadhar').disabled=true;
+				document.getElementById('address').disabled=true;
+				
+
+			}
+
+			else if (a=="bsc") 
+			{
+				document.getElementById('Tc').disabled=true;
+				document.getElementById('Marksheet').disabled=true;
+				document.getElementById('cc').disabled=true;
+				document.getElementById('pan').disabled=true;
+				document.getElementById('aadhar').disabled=false;
+				document.getElementById('address').disabled=false;
+				
+
+			}
+			
+		}
+
+	</script>
+</head>
+<body>
+
+	
+
+	<select id="x">
+		<option value="10">10</option>
+		<option value="12">12</option>
+		<option value="bsc">Bsc</option>
+	</select>
+
+	<input type="button" name="" value="click me" onclick="abc()"><br>
+
+	<input type="radio" name="g" id="Tc">Tc
+	<input type="radio" name="g" id="Marksheet">Marksheet
+
+
+    <input type="radio" name="g" id="cc">cc
+	<input type="radio" name="g" id="pan">pan
+
+	<input type="radio" name="g" id="aadhar">aadhar
+	<input type="radio" name="g" id="address">address
+
+</body>
+</html>
